@@ -1,12 +1,11 @@
-
-
-*{
+* {
     margin: 0;
     padding: 0;
     color: #E4E6EB;
     font-family: Arial;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,38 +13,38 @@ body{
 }
 
 /* header section */
-
-header{
+header {
     width: 100%;
     height: 58px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(32, 31, 31);
+    background-color: rgb(18, 48, 218);
+    position: relative;
+    /* Ensures the header maintains its height */
 }
 
 /* header first part */
-header .first{
+header .first {
     width: 70%;
-    height:100%;
+    height: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 20px;
 }
 
-
-/*logo */
-header .first .logo{
+/* logo */
+header .first .logo {
     width: 60px;
     height: 50px;
     margin: 20px 0px;
     position: fixed;
     left: 10px;
     cursor: pointer;
-
 }
-header .first .logo .image{
+
+header .first .logo .image {
     width: 100%;
     height: 100%;
     background-image: url(image/logo.png);
@@ -54,7 +53,7 @@ header .first .logo .image{
     background-repeat: no-repeat;
 }
 
-header .first .search{
+header .first .search {
     position: relative;
     left: 80px;
     display: flex;
@@ -66,11 +65,12 @@ header .first .search{
     background-color: #343636;
     border-radius: 20px;
 }
-header .first .search:focus-within{
+
+header .first .search:focus-within {
     box-shadow: 0px 0px 10px blue;
 }
 
-header .first .search .icon{
+header .first .search .icon {
     height: 100%;
     width: 40px;
     display: flex;
@@ -78,11 +78,13 @@ header .first .search .icon{
     align-items: center;
     cursor: pointer;
 }
-header .first .search i{
+
+header .first .search i {
     font-size: 20px;
     padding: 5px 10px;
 }
-header .first .search input{
+
+header .first .search input {
     width: 100%;
     height: 100%;
     padding: 0px 10px;
@@ -90,13 +92,10 @@ header .first .search input{
     outline: none;
     background-color: transparent;
     font-size: 1em;
-
 }
 
-
 /* header middle part */
-
-header .middle .hover{
+header .middle .hover {
     width: 100px;
     height: 50px;
     display: flex;
@@ -105,10 +104,9 @@ header .middle .hover{
     font-size: 25px;
     cursor: pointer;
     border-radius: 5px;
-
-
 }
-header .middle .hover:hover{
+
+header .middle .hover:hover {
     background-color: #464949;
     box-shadow: 0px 0px 10px blue;
 }
@@ -117,19 +115,18 @@ header .middle abbr {
     text-decoration: none;
 }
 
-header .middle{
+header .middle {
     width: 100%;
-    height:100%;
+    height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-
 }
 
 /* header last part */
-header .last{
+header .last {
     width: 70%;
-    height:100%;
+    height: 100%;
     margin-left: 5px;
     display: flex;
     justify-content: flex-end;
@@ -137,7 +134,7 @@ header .last{
     gap: 20px;
 }
 
-header .last .size{
+header .last .size {
     width: 40px;
     height: 40px;
     display: flex;
@@ -148,7 +145,8 @@ header .last .size{
     border-radius: 50%;
     background-color: #464949;
 }
-header .last .image{
+
+header .last .image {
     width: 100%;
     height: 100%;
     background-image: url(image/account.jpg);
@@ -157,40 +155,63 @@ header .last .image{
     background-repeat: no-repeat;
     border-radius: 50%;
 }
-header .last .size:hover{
+
+header .last .size:hover {
     background-color: #555c5c;
     box-shadow: 0px 0px 10px blue;
 }
-header .last .account{
+
+header .last .account {
     margin-right: 20px;
 }
-header .last abbr{
+
+header .last abbr {
     text-decoration: none;
 }
 
-
-@media only screen and (max-width: 1000px)  and (min-width: 700px) {
-    header .middle{
+/* Media Queries */
+@media only screen and (max-width: 1000px) and (min-width: 700px) {
+    header .middle {
         display: none;
     }
-
 }
 
-@media only screen and (max-width: 1200px) {
-    header .first .search{
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
 
+@media only screen and (max-width: 1200px) {
+    header .first .search {
+        border-radius: 50%;
     }
+
     header .first .search input {
         display: none;
     }
 }
 
-@media only screen and (max-width:700px){
-    header .first, header .last{
+@media only screen and (max-width: 700px) {
+
+    header .first,
+    header .last {
         display: none;
     }
 
+    header {
+        background-color: rgb(18, 48, 218);
+        /* Ensure header background color stays */
+    }
+
+    header {
+        width: 100%;
+    }
+
+    header.middle {
+        width: 100%;
+    }
+
+    /* header middle part */
+    header .middle .hover {
+        width: 100%;
+        height: 10px;
+
+
+    }
 }
