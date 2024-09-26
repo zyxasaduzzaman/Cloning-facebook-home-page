@@ -19,8 +19,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(18, 48, 218);
-    position: relative;
+    background-color: rgb(43, 39, 39);
+    position: fixed;
     /* Ensures the header maintains its height */
 }
 
@@ -185,6 +185,11 @@ header .last abbr {
     header .first .search input {
         display: none;
     }
+    header .first .search{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -192,11 +197,6 @@ header .last abbr {
     header .first,
     header .last {
         display: none;
-    }
-
-    header {
-        background-color: rgb(18, 48, 218);
-        /* Ensure header background color stays */
     }
 
     header {
