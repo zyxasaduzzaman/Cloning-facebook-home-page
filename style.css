@@ -305,110 +305,122 @@ hr{
 .box3 a:hover{
     text-decoration: underline;
 }
+
+/* main middle part */
+
 main .middle{
     display: flex;
     width: 60%;
     justify-content: center;
     align-items: center;
 
-
 }
 
 /* main right part */
 main .right{
     display: flex;
-    width: 25%;
-    justify-content: flex-end;
+    width: 35%;
+    justify-content: center;
     align-items: center;
-
-
-
+}
+main .right .box{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.type-2{
+    width: 90%;
+    border-radius: 10px;
+    padding: 10px 0px;
+    cursor: pointer;
+}
+.type-2:hover{
+    background-color: #272929;
 }
 
+main .right .box .text{
+    width: 90%;
+    display: flex;
+    justify-content: first baseline;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: left;
+}
+main .right .box .data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    flex-wrap: wrap;
+}
+main .right .box .data1 img, main .right .box .data2 img{
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    margin-left: 20px;
+
+}
+main .right .box a{
+    text-decoration: none;
+    opacity: 50%;
+    font-size: 12px;
+}
+main .right .box .data1, main .right .box .data2{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    cursor: pointer;
+}
+
+main .right .box .data .data-image{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5%;
+}
+main .right .box .data-image img{
+    width: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+main .right .box .data-image p{
+    font-size: 18px;
+    font-weight: 600;
+    opacity: 80%;
+}
+main .right .box .data-image .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* request */
+
+
+
+
 /* Media Queries */
+
 @media only screen and (max-width: 850px){
     header .first {
         display: none;
     }
-    header{
-        box-shadow: none;
-    }
-    main .scroll,main .middle-scroll{
-        height: calc(100vh - 116px);
-    }
-    .less-850{
-        width: 100%;
-        height: 58px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0px 0.2px 0px 0px white;
-        background-color: rgb(41, 41, 41);
-    }
-    .less-850 .left{
-        width:80%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-    }
-    .less-850 .logo{
-        width:40px;
-        height: 40px;
-        border-radius: 50%;
-        cursor: pointer;
-        /* position: absolute;
-        left: 100px; */
-    }
-    .less-850 .logo .image{
-        width: 100%;
-        height: 100%;
-        background-image: url(image/header-image/logo.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-    .less-850 .search{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 60%;
-        background-color: #313333;
-        height: 40px;
-        border-radius: 20px;
-    }
-    .less-850 .search-icon{
-        width: 50px;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 20px;
-        cursor: pointer;
-    }
-    .less-850 .search-bar{
-        width: 100%;
-        height: 100%;
-;
-    }
-    .less-850 input{
-        width: 90%;
-        height: 100%;
-        border: none;
-        outline: none;
-        font-size: 1em;
-        background-color: transparent;
-        padding: 0px 5px;
-        margin-right: 10px;
+    main .right{
+        width: 40%;
     }
 
+}
 
-}
-@media only screen and (min-width: 850px){
-    .less-850{
-        display: none;
-    }
-}
 
 
 @media only screen and (max-width: 1000px){
@@ -421,9 +433,7 @@ main .right{
     main .middle{
         width: 60%;
     }
-    main .right{
-        width: 40%;
-    }
+
 }
 
 @media only screen and (max-width: 1200px) {
@@ -440,12 +450,8 @@ main .right{
         border-radius: 50%;
     }
 }
-@media only screen and (min-width: 700px){
-    .less-850 .right{
-        display: none;
-    }
 
-}
+
 
 @media only screen and (max-width: 700px) {
 
@@ -475,74 +481,29 @@ main .right{
     main .middle{
         width: 80%;
     }
+
     main{
         justify-content:center;
     }
-    .less-850{
-        justify-content: space-between;
-    }
-    .less-850 .left{
-        width: 20%;
-        justify-content: flex-end;
-    }
-    .less-850 .logo{
-        position: fixed;
-        left: 10px;
+}
 
-    }
-    .less-850 .left .search-bar{
+@media only screen and (min-width: 700px){
+    header .middle .menu{
         display: none;
     }
-    .less-850 .left .search{
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        position: fixed;
-        left: 60px;
-    }
-    .less-850 .right .image{
-        width: 30px;
-        height: 30px;
-        background-image: url(image/header-image/account.jpg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 50%;
-    }
-    .less-850 .right abbr{
-        cursor: pointer;
-        text-decoration: none;
-    }
-    .less-850 .right{
-        width: 90%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.5em;
-        gap: 10%;
-    }
-
-    
 }
 
 @media only screen and (max-width : 500px){
     main .middle{
         width: 98%;
     }
-    .less-850 .right{
-        gap: 15%;
-        margin-left: 50px;
+
+    header .middle .hover{
+        font-size: 100%;
     }
 }
 
-@media only screen and (max-width: 300px){
-    .less-850 .left{
-        display: none;
-    }
-    .less-850 .right{
-        margin-left: 0px;
-    }
-}
+
 
 
 
