@@ -182,7 +182,7 @@ main{
 }
 
 main .middle-scroll{
-    width: 90%;
+    width: 75%;
     height: calc(100vh - 58px);
     overflow-y: auto;
 }
@@ -310,16 +310,78 @@ hr{
 
 main .middle{
     display: flex;
-    width: 60%;
+    width: 50%;
     justify-content: center;
     align-items: center;
 
 }
 
+main .middle .box{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+main .middle img{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 5px;
+}
+main .middle .hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 30%;
+    padding: 5px 0px;
+    border-radius: 10px;
+    transition: 0.3s;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+main .middle .hover:hover{
+    background-color: #464949;
+}
+main .middle .box{
+    background-color: #1b1d1d;
+}
+main .middle .box1{
+    width: 100%;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+main .middle .box1 input{
+    width: 80%;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: #373a3a;
+    padding: 5px 0px;
+    text-indent: 10px;
+    border-radius: 20px;
+    font-size: 18px;
+}
+main .middle .box1 input::placeholder{
+    color: rgb(173, 170, 170);
+}
+main .middle .box2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
 /* main right part */
 main .right{
     display: flex;
-    width: 35%;
+    width: 25%;
     justify-content: center;
     align-items: center;
 }
@@ -433,6 +495,18 @@ main .right .box .data-image .text{
     main .middle{
         width: 60%;
     }
+    main .middle-scroll{
+        width: 90%;
+    }
+    main .middle .hover{
+        width: 25%;
+    }
+    main .middle .hover:hover{
+        width: 35%;
+    }
+    main .middle .box2{
+        justify-content: space-evenly;
+    }
 
 }
 
@@ -464,7 +538,13 @@ main .right .box .data-image .text{
         width: 100%;
     }
 
-    header.middle {
+    header .middle {
+        width: 100%;
+    }
+    main .middle{
+        width: 98%;
+    }
+    main .middle-scroll{
         width: 100%;
     }
 
@@ -475,11 +555,9 @@ main .right .box .data-image .text{
 
 
     }
+
     main .right{
         display: none;
-    }
-    main .middle{
-        width: 80%;
     }
 
     main{
@@ -491,6 +569,7 @@ main .right .box .data-image .text{
     header .middle .menu{
         display: none;
     }
+    
 }
 
 @media only screen and (max-width : 500px){
@@ -500,6 +579,13 @@ main .right .box .data-image .text{
 
     header .middle .hover{
         font-size: 100%;
+    }
+    main .middle .box2 img{
+        width: 20px;
+        height: 20px;
+    }
+    main .middle .box2 p{
+        font-size: 10px;
     }
 }
 
