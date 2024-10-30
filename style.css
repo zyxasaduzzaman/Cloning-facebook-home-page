@@ -264,6 +264,7 @@ hr{
     align-items: center;
     width: 90%;
     padding: 5px;
+    margin: 8px 0px;
     border-radius: 8px;
     gap: 10px;
     font-weight: 600;
@@ -506,6 +507,9 @@ main .middle .profile-update{
     background-color: #1b1d1d;
     margin-top: 15px;
     border-radius: 10px;
+
+}
+main .middle .profile-update .up{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -515,13 +519,149 @@ main .middle .profile-update .profile-name a:hover, .time-know a:hover {
     text-decoration: underline !important;
 }
 
+main .middle .profile-update .up .account-data{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 15px;
+    margin-left:20px;
+}
+main .middle .profile-update .up .account-data img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+main .middle .profile-update .up .account-data .data-time-know{
+    margin-left: 10px;
+}
+main .middle .profile-update .up .account-data .data-time-know .profile-name{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+main .middle .profile-update .up .account-data .data-time-know a{
+    text-decoration: none;
+}
+
+main .middle .profile-update .up .account-data .data-time-know .time-know{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5px;
+}
+
+main .middle .profile-update .up .icons{
+    width: 100px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 26px;
+    padding:0px 5px;
+    gap: 20px;
+}
+main .middle .profile-update .up .icons i{
+    cursor: pointer;
+}
+main .middle .profile-update p{
+    margin: 15px;
+    margin-left: 30px;
+}
+
+ main .middle .profile-update .reactes-comments-shares{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    margin-left: 30px;
+    gap: 20px;
+
+ }
+ main .middle .profile-update .reactes-comments-shares a{
+    color: rgb(145, 145, 155);
+    font-size: 14px;
+    text-decoration: none;
+    flex-shrink: 0;
+ }
+ main .middle .profile-update .reactes-comments-shares a:hover{
+    text-decoration: underline;
+ }
+ main .middle .profile-update .reactes-comments-shares .reactes{
+    font-size: 20px;
+ }
+main .middle .profile-update .reactes-comments-shares .reactes-names{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+main .middle .profile-update .reactes-comments-shares .comments-shares{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+main .middle .profile-update .hr{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+main .middle .profile-update hr{
+    width: 90%;;
+}
+main .middle .profile-update .buttons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+main .middle .profile-update .buttons p{
+    margin: 0px;
+}
+main .middle .profile-update .buttons .r{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    gap: 5px;
+    padding: 5px 2px;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+main .middle .profile-update .buttons .r:hover{
+    background-color: #4c5252;
+}
+main .middle .profile-update .image-video{
+    width: 100%;
+    height: 800px;
+    margin: 30px 0px;
+}
+main .middle .profile-update .image-video img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+}
+main .middle .profile-update .image-video video{
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+}
+
+
+
 /* main right part */
 main .right{
     display: flex;
     width: 25%;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20px;
 }
 main .right .box{
     width:100%;
@@ -619,6 +759,7 @@ main .right .box .data-image .text{
         width: 40%;
     }
 
+
 }
 
 
@@ -645,6 +786,9 @@ main .right .box .data-image .text{
     main .middle .box2{
         justify-content: space-evenly;
     }
+    main .middle .profile-update .image-video{
+        height:800px;
+    }
 
 }
 
@@ -660,6 +804,9 @@ main .right .box .data-image .text{
         width: 40px;
         height: 40px;
         border-radius: 50%;
+    }
+    main .middle .profile-update .image-video{
+        height:400px;
     }
 }
 
@@ -702,11 +849,17 @@ main .right .box .data-image .text{
     main{
         justify-content:center;
     }
+    main .middle .profile-update .image-video{
+        height:700px;
+    }
 }
 
 @media only screen and (min-width: 700px){
     header .middle .menu{
         display: none;
+    }
+    main .middle .profile-update .image-video{
+        height:800px;
     }
     
 }
@@ -728,6 +881,12 @@ main .right .box .data-image .text{
     }
     main .middle .profile-update .profile-name p{
         display: none;
+    }
+    main .middle .profile-update .buttons .r{
+        font-size: 10px;
+    }
+    main .middle .profile-update .image-video{
+        height:500px;
     }
 }
 
